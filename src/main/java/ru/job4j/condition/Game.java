@@ -14,6 +14,6 @@ public class Game {
     }
 
     public static void main(String[] args) {
-        menu("tanks");
+        Game.menu("tanks");
     }
 }
