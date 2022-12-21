@@ -8,8 +8,6 @@ public class DummyBot {
             rsl = "Hi, SmartAss";
         } else if ("Bye.".equals(question)) {
             rsl = "See you later.";
-        } else {
-            return rsl;
         }
         return rsl;
     }
