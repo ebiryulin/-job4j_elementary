@@ -24,4 +24,3 @@ public class Slash {
         draw(5);
     }
 }
-//}
