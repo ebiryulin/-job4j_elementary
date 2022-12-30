@@ -2,12 +2,10 @@ package ru.job4j.array;
 
 public class RollBackArray {
     public static int[] rollback(int[] array) {
-        for (int index = 0; index < array.length / 2; index++) {
-            int lastIndex = array.length - 1 - index;
-            int temp = array[lastIndex];
-            array[lastIndex] = array[index];
-            array[index] = temp;
+        int[] result = new int[array.length];
+        for (int index = 0; index < array.length; index++) {
+            result[result.length - index - 1] = array[index];
         }
-        return array;
+        return result;
     }
 }
