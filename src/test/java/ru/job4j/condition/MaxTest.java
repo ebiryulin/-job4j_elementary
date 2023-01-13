@@ -30,4 +30,22 @@ public class MaxTest {
         int expected = 5;
         assertThat(result).isEqualTo(expected);
     }
+
+    @Test
+    public void whenMax5To2And3Then5() {
+        int one = 5;
+        int two = 2;
+        int three = 3;
+        int result = Max.max(one, two, three);
+        int expected = 5;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    public void whenFirstMax() {
+        int[] array = new int[] {3, 2, 1, 0};
+        int result = Max.max(array);
+        int expected = 3;
+        assertThat(result).isEqualTo(expected);
+    }
 }
