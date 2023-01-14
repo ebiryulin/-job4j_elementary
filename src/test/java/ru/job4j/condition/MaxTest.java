@@ -42,10 +42,13 @@ public class MaxTest {
     }
 
     @Test
-    public void whenFirstMax() {
-        int[] array = new int[] {3, 2, 1, 0};
-        int result = Max.max(array);
-        int expected = 3;
+    public void whenMax5To2And3And4Then5() {
+        int one = 5;
+        int two = 2;
+        int three = 3;
+        int four = 4;
+        int result = Max.max(one, two, three, four);
+        int expected = 5;
         assertThat(result).isEqualTo(expected);
     }
 }
